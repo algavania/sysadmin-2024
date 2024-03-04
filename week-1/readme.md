@@ -19,45 +19,45 @@
 2. Install Virtual Box dan buka Virtual Boxnya.
 3. Klik Icon + (Add) di kanan atas Virtual Box. Lalu isi ISO Image sesuai dengan path saat mendownload ISO Debian tadi. Lalu centang "Skip Unattended Installation" agar kita bisa secara manual mengonfigurasi Debiannya.
 
-![](../assets/week-1/pic%20(2).png)
+![](assets/pic%20(2).png)
 
 4. Lalu buat memory (RAM) sebanyak 4GB. Dan untuk prosesornya di sini saya memilih 4 cores.
 
-![](../assets/week-1/pic%20(3).png)
+![](assets/pic%20(3).png)
 
 5. Buat storagenya sebanyak 25GB.
 
-![](../assets/week-1/pic%20(4).png)
+![](assets/pic%20(4).png)
 
 6. Akan muncul summary mengenai Machine Name, OS Type, Hardware, dan Disk. Cek dulu dan pastikan bahwa sudah sesuai dengan apa yang kita inginkan lalu klik Finish.
 
-![](../assets/week-1/pic%20(5).png)
+![](assets/pic%20(5).png)
 
 7. Lalu start debiannya dan akan muncul installer menunya. Klik Graphical Install.
 
-![](../assets/week-1/pic%20(6).png)
+![](assets/pic%20(6).png)
 
 8. Setelah itu kita akan diarahkan untuk mengonfigurasi lokasi, keyboard, dan bahasa.
 
-![](../assets/week-1/pic%20(7).png)
-![](../assets/week-1/pic%20(8).png)
-![](../assets/week-1/pic%20(9).png)
-![](../assets/week-1/pic%20(10).png)
-![](../assets/week-1/pic%20(11).png)
-![](../assets/week-1/pic%20(12).png)
-![](../assets/week-1/pic%20(13).png)
+![](assets/pic%20(7).png)
+![](assets/pic%20(8).png)
+![](assets/pic%20(9).png)
+![](assets/pic%20(10).png)
+![](assets/pic%20(11).png)
+![](assets/pic%20(12).png)
+![](assets/pic%20(13).png)
 
 9. Di sini kita akan mengonfigurasi networknya. Isi hostname dengan format "sysadmin-NRP". Lalu domainnya dikosongi saja.
 
-![](../assets/week-1/pic%20(14).png)
-![](../assets/week-1/pic%20(15).png)
+![](assets/pic%20(14).png)
+![](assets/pic%20(15).png)
 
 10. Setelah itu konfigurasi untuk informasi user.
-![](../assets/week-1/pic%20(16).png)
-![](../assets/week-1/pic%20(17).png)
-![](../assets/week-1/pic%20(18).png)
-![](../assets/week-1/pic%20(19).png)
-![](../assets/week-1/pic%20(20).png)
+![](assets/pic%20(16).png)
+![](assets/pic%20(17).png)
+![](assets/pic%20(18).png)
+![](assets/pic%20(19).png)
+![](assets/pic%20(20).png)
 
 11. Lalu kita akan mengonfigurasi partisi disknya. Pilih manual. Untuk partisinya sebagai berikut:
 - 20GB, beginning, primary, ext4, mount point: /
@@ -65,20 +65,20 @@
 - 1GB, beginning, primary, ext 4, mount point: /boot, bootable flag: on
 - 843.1MB, end, logical, swap area.
 
-![](../assets/week-1/pic%20(21).png)
-![](../assets/week-1/pic%20(22).png)
-![](../assets/week-1/pic%20(23).png)
-![](../assets/week-1/pic%20(24).png)
-![](../assets/week-1/pic%20(25).png)
+![](assets/pic%20(21).png)
+![](assets/pic%20(22).png)
+![](assets/pic%20(23).png)
+![](assets/pic%20(24).png)
+![](assets/pic%20(25).png)
 
 12. Kita akan masuk ke finalisasi instalasinya. Pilih "no" untuk scan more media. Pilih lokasi "Indonesia" dan untuk mirrornya bisa pilih "deb.debian.org" atau yang terdekat dari lokasi kita sekarang. Untuk http proxy dikosongi saja. Dan untuk software selection, saya menambah centang Web Server dan SSH Server.
 
-![](../assets/week-1/pic%20(27).png)
-![](../assets/week-1/pic%20(28).png)
-![](../assets/week-1/pic%20(29).png)
-![](../assets/week-1/pic%20(30).png)
-![](../assets/week-1/pic%20(31).png)
-![](../assets/week-1/pic%20(32).png)
+![](assets/pic%20(27).png)
+![](assets/pic%20(28).png)
+![](assets/pic%20(29).png)
+![](assets/pic%20(30).png)
+![](assets/pic%20(31).png)
+![](assets/pic%20(32).png)
 
 13. Tunggu instalasi hingga selesai. Nanti akan muncul konfigurasi Boot Loader, pilih Yes. Tunggu beberapa saat, lalu instalasi Debian sudah berhasil.
 
@@ -165,11 +165,11 @@ Ini memungkinkan administrator untuk melacak siapa yang menjalankan perintah apa
 ## Penambahan User sebagai User Sudo
 1. Buka Debian dari VM.
 2. Buka terminal lalu jalankan seperti ini:
-![](../assets/week-1/sudo%20(1).png)
+![](assets/sudo%20(1).png)
 3. Lalu scroll ke bawah dan pada `# User privilege specification`, tambahkan user kita dan berikan privilege ALL. Setelah itu klik CTRL + X -> ketik Y untuk menyimpan perubahannya.
 
-![](../assets/week-1/sudo%20(2).png)
-![](../assets/week-1/sudo%20(3).png)
+![](assets/sudo%20(2).png)
+![](assets/sudo%20(3).png)
 
 4. User "alga" sudah berhasil kita tambahkan. Untuk mengeceknya, buka terminal lagi (pastikan bukan di root, melainkan di user kita). Lalu ketik sudo -l. Akan muncul:
 ```
@@ -179,4 +179,4 @@ User alga may run the following commands on sysadmin-3122600010:
 
 Itu berarti user kita sudah bisa menjalankan privilege superuser.
 
-![](../assets/week-1/sudo%20(4).png)
+![](assets/sudo%20(4).png)
