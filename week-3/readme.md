@@ -1,52 +1,10 @@
-<!--
-repo name: BEST-README
-description: An awesome README template to jumpstart your projects!
-github name:  oGranny
-link: LINK
-logo path: assets/logo.png
-screenshot: assets/ss.png
-twitter: your_username
-email: example@email.com
--->
+# Week 3
 
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-    <a href="LINK">
-        <img src="assets/logo.png" alt="Logo" width="80" height="80">
-    </a>
-    <h3 align="center">LINK</h3>
-    <p align="center">
-        BEST-README
-        <br />
-        <a href="LINK"><strong>Explore the docs �</strong></a>
-        <br />
-        <br />
-        <a href="//github.com/BEST-README/ oGranny">View Demo</a>
-        �
-        <a href="LINK/issues">Report Bug</a>
-        �
-        <a href="LINK/issues">Request Feature</a>
-    </p>
-</p>
-
-
-
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Bagaimana Internet Bekerja?](#bagaimana-internet-bekerja)
+- [Week 3](#week-3)
+  - [Table of Contents](#table-of-contents)
+  - [Bagaimana Internet Bekerja?](#bagaimana-internet-bekerja)
 
 
 ## Bagaimana Internet Bekerja?
