@@ -6,6 +6,10 @@
   - [Table of Contents](#table-of-contents)
   - [Bagaimana Internet Bekerja?](#bagaimana-internet-bekerja)
   - [Bind9](#bind9)
+  - [Setting Mikrotik](#setting-mikrotik)
+    - [NAT pada firewall:](#nat-pada-firewall)
+    - [Address list](#address-list)
+    - [Routing untuk terhubung ke internet](#routing-untuk-terhubung-ke-internet)
 
 
 ## Bagaimana Internet Bekerja?
@@ -71,3 +75,28 @@ Dengan kerjasama antara semua komponen ini, data dapat dikirimkan dengan cepat d
 12. Jalankan perintah nslookup.
 
 ![](assets/12.png)
+
+## Setting Mikrotik
+### NAT pada firewall:
+![alt text](assets/1.jpeg) <br>
+* Action: masquerade
+* Chain: srcnat
+* Source Address: 192.168.1.0/24
+* Destination Address: 0.0.0.0/0
+* Out Interface: ether1<br>
+
+### Address list
+* Tambahkan Route untuk Ether1 : 0.0.0.0/0 192.168.88.254 ether1 <br>
+![alt text](assets/2.jpeg)<br><br>
+
+* 192.168.1.1/24 untuk 192.168.1.0 pada bridge1
+* 192.168.88.1/24 untuk 192.168.88.0 pada ether1
+![alt text](assets/3.jpeg)
+
+
+### Routing untuk terhubung ke internet
+![alt text](assets/4.jpeg)<br><br>
+
+* DNS server pada DHCP: 202.9.85.3
+  
+![alt text](assets/5.jpeg)<br>
