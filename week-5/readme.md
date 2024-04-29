@@ -19,15 +19,17 @@
 
 ![](assets/3.png)
 
-4. Buka konfigurasi di named.conf-default-zones dan sesuaikan konfigurasi seperti di gambar.
+4. Buka konfigurasi di named.conf.default-zones dan sesuaikan konfigurasi seperti di gambar.
 
 ![](assets/4.png)
 
-5. Buka konfigurasi di named-conf.options dan sesuaikan konfigurasi seperti di gambar. Di listen-on, sesuaikan dengan kelompok masing-masing.
+5. Buka konfigurasi di named.conf.options dan sesuaikan konfigurasi seperti di gambar. Di listen-on, sesuaikan dengan kelompok masing-masing.
 
 ![](assets/5.png)
 
-6. Buka konfigurasi di named-conf.local dan sesuaikan zone dengan kelompok masing-masing.
+![](assets/5_2.png)
+
+6. Buka konfigurasi di named.conf.local dan sesuaikan zone dengan kelompok masing-masing.
 
 ![](assets/6.png)
 
