@@ -5,6 +5,7 @@
 - [Week 7](#week-7)
   - [Table of Contents](#table-of-contents)
   - [Mail Server](#mail-server)
+    - [Roundcube](#roundcube)
 
 ## Mail Server
 1. Konfigurasi db.kelompok1.local.
@@ -124,3 +125,86 @@
 29. Konfigurasi file master.
 
 ![](assets/mail-32.png)
+
+30. Lalu coba jalankan telnet, cek apakah sudah terhubung.
+
+![](assets/mail-35.png)
+
+31. Buka Debian Evolution untuk GUI emailnya dan di sini saya akan mencoba mengirimkan ke kelompok 2.
+
+![](assets/mail-36.png)
+
+![](assets/mail-37.png)
+
+### Roundcube
+1. Install roundcube dengan `suto apt install roundcube`.
+
+![](assets/mail-38.png)
+
+![](assets/mail-39.png)
+
+![](assets/mail-40.png)
+
+2. Lalu kita buat MariaDB database dan user untuk roundcubenya.
+
+![](assets/mail-41.png)
+
+3. Lalu konfigurasi config.inc.php di roundcube.
+
+![](assets/mail-42.png)
+
+4. Konfigurasi apache.conf.
+
+![](assets/mail-43.png)
+
+5. Konfigurasi 000-default.conf.
+
+![](assets/mail-44.png)
+
+6. Lalu rekonfigurasi dengan `sudo dpkg-reconfigure roundcube-core`.
+
+![](assets/mail-45.png)
+
+![](assets/mail-46.png)
+
+![](assets/mail-47.png)
+
+![](assets/mail-48.png)
+
+![](assets/mail-49.png)
+
+![](assets/mail-50.png)
+
+![](assets/mail-51.png)
+
+![](assets/mail-52.png)
+
+![](assets/mail-53.png)
+
+![](assets/mail-54.png)
+
+![](assets/mail-55.png)
+
+![](assets/mail-56.png)
+
+![](assets/mail-57.png)
+
+![](assets/mail-58.png)
+
+![](assets/mail-59.png)
+
+7. Roundcube berhasil terkonfigurasi. Navigasi ke browser dan buka mail.kelompok1.local. Di sini saya login dengan user debian saya.
+
+![](assets/mail-60.png)
+
+8. Terlihat bahwa isi dari Roundcube sudah sama dengan Debian Evolution.
+
+![](assets/mail-61.png)
+
+9. Di sini saya coba kirim ke kelompok 2. 
+
+![](assets/mail-62.png)
+
+11.  Lalu berhasil mendapat balasan.
+
+![](assets/mail-63.png)

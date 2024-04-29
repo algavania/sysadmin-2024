@@ -45,13 +45,17 @@
 
 ![](assets/9.png)
 
-10. Jalankan sudo systemctl restart named.
-11. Jalankan perintah dig.
+10. Konfigurasikan /etc/resolv.conf.
+
+![](assets/13.png)
+
+11. Jalankan sudo systemctl restart named.
+12. Jalankan perintah dig.
   
 ![](assets/11.png)
 
 
-12. Jalankan perintah nslookup.
+13. Jalankan perintah nslookup.
 
 ![](assets/12.png)
 
